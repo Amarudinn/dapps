@@ -11,15 +11,15 @@ const farm = document.getElementById('farm');
 const myFarm = document.getElementById('myFarm');
 
 farmTab.addEventListener('click', () => {
-    farmTab.classList.add('border-b-2', 'border-green-400', 'bg-gray-700/80');
-    myFarmTab.classList.remove('border-b-2', 'border-green-400', 'bg-gray-700/80');
+    farmTab.classList.add('border-b-2', 'border-green-400', 'bg-gray-700/80', 'hover:bg-gray-700/50');
+    myFarmTab.classList.remove('border-b-2', 'border-green-400', 'bg-gray-700/80', 'hover:bg-gray-700/50');
     farm.classList.remove('hidden');
     myFarm.classList.add('hidden');
 });
 
 myFarmTab.addEventListener('click', () => {
-    myFarmTab.classList.add('border-b-2', 'border-green-400', 'bg-gray-700/80');
-    farmTab.classList.remove('border-b-2', 'border-green-400', 'bg-gray-700/80');
+    myFarmTab.classList.add('border-b-2', 'border-green-400', 'bg-gray-700/80', 'hover:bg-gray-700/50');
+    farmTab.classList.remove('border-b-2', 'border-green-400', 'bg-gray-700/80', 'hover:bg-gray-700/50');
     myFarm.classList.remove('hidden');
     farm.classList.add('hidden');
 });

@@ -106,21 +106,29 @@
         </div>
     </div>
 
-    <div class="container w-full h-full flex justify-center items-center">
+    <div class="text-slate-300 ml-4 mt-10 mb-4 flex-row justify-center items-center">
+        <h3 class="font-extrabold text-[20px] tracking-[1px]">Earn from LP</h3>
+        <h3 class="text-[14px]">Liquidity Pools & Farms</h3>
+    </div>
+
+    <div class="container w-full h-full flex justify-center items-center mb-52">
         <div
-            class="mt-20 mx-2 px-4 pt-1 pb-4 w-full flex-row justify-center items-center backdrop-blur-lg bg-white/5 rounded-lg shadow-md">
-            <div class="grid grid-cols-2 place-items-center w-40 mb-6">
-                <div id="farmTab" class="text-slate-300 border-b-2 border-green-400 rounded-md bg-gray-700/80 hover:bg-gray-700/50 hover:text-slate-300/80 w-full flex justify-center items-center cursor-pointer">
+            class="mt-4 mx-2 px-4 pt-1 pb-4 w-full flex-row justify-center items-center backdrop-blur-lg bg-white/5 rounded-lg shadow-md">
+            <div class="text-slate-300 text-[11px] float-right">V1.0.0</div>
+            <div class="grid grid-cols-2 place-items-center mt-3 w-40 mb-12 border-1 border-slate-500 rounded-sm overflow-hidden">
+                <div id="farmTab"
+                    class="text-slate-300 border-b-2 py-1 border-green-400 bg-gray-700/80 hover:text-slate-300/80 w-full flex justify-center items-center cursor-pointer">
                     Farm
                 </div>
-                <div id="myFarmTab" class="text-slate-300 w-full flex justify-center items-center rounded-md cursor-pointer">
+                <div id="myFarmTab"
+                    class="text-slate-300 py-1 w-full flex justify-center items-center hover:text-slate-300/80 cursor-pointer">
                     My Farm
                 </div>
             </div>
             <div id="farm">
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="stakeContainer">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/AIT</h3>
@@ -144,11 +152,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito cursor-pointer"
                                     id="maxStakeAmount" onclick="setMaxStakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md font-Nunito cursor-pointer"
                                 onclick="stake()">Farm</button>
                         </div>
                     </div>
@@ -156,7 +164,7 @@
 
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="stakeContainerDua">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/YAKI</h3>
@@ -180,11 +188,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 cursor-pointer font-Nunito"
                                     id="maxStakeAmount" onclick="setMaxStakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md cursor-pointer font-Nunito"
                                 onclick="stake()">Farm</button>
                         </div>
                     </div>
@@ -192,7 +200,7 @@
 
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="stakeContainerTiga">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/CHOG</h3>
@@ -216,11 +224,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1.5 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito cursor-pointer"
                                     id="maxStakeAmount" onclick="setMaxStakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1.5 ml-1 rounded-md font-Nunito cursor-pointer"
                                 onclick="stake()">Farm</button>
                         </div>
                     </div>
@@ -230,7 +238,7 @@
             <div id="myFarm" class="hidden">
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="unstakeContainer">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/AIT</h3>
@@ -258,11 +266,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito cursor-pointer"
                                     id="maxStakeAmount" onclick="setMaxUnstakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito cursor-pointer"
                                 onclick="unstakePartial()">Remove</button>
                         </div>
                     </div>
@@ -270,7 +278,7 @@
 
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="unstakeContainerDua">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/YAKI</h3>
@@ -298,11 +306,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito cursor-pointer"
                                     id="maxStakeAmount" onclick="setMaxUnstakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito cursor-pointer"
                                 onclick="unstakePartial()">Remove</button>
                         </div>
                     </div>
@@ -310,7 +318,7 @@
 
                 <div class="flex-row justify-center items-center border-l-3 border-green-400 px-3 py-3 mt-3 mb-5 backdrop-blur-lg bg-white/5 shadow-lg rounded-lg"
                     id="unstakeContainerTiga">
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center cursor-pointer">
                         <div class="flex items-">
                             <img src="/images/TEA-AIT.png" alt="Images" class="w-6 h-6 mr-1">
                             <h3 class="text-slate-300">TEA/CHOG</h3>
@@ -338,11 +346,11 @@
                                     class="w-full text-[#DDDDDD] ml-1 bg-transparent outline-none"
                                     placeholder="Enter amount">
                                 <button
-                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito"
+                                    class="bg-green-400 text-[14px] text-slate-900 py-1 px-2 ml-2 hover:bg-green-600 hover:text-slate-300 font-Nunito cursor-pointer"
                                     id="maxStakeAmount" onclick="setMaxUnstakeAmount()">Max</button>
                             </div>
                             <button
-                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito"
+                                class="bg-green-400 text-slate-900 text-[16px] block hover:bg-green-600 hover:text-slate-300 px-2 py-1 ml-1 rounded-md font-Nunito cursor-pointer"
                                 onclick="unstakePartial()">Remove</button>
                         </div>
                     </div>
@@ -352,35 +360,38 @@
         </div>
     </div>
 
-    <div
-        class="flex justify-center items-center mt-16 mb-6 gap-2 text-[18px] text-slate-300 md:absolute md:bottom-60 md:left-1/2 md:transform md:-translate-x-1/2">
-        <a href="https://x.com/m_amarudinn2">
-            <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
-                    class="fa-brands fa-x-twitter"></i></div>
-        </a>
-        <a href="https://t.me/AirdropIntelligent">
-            <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
-                    class="fa-brands fa-telegram"></i></div>
-        </a>
-        <a href="#">
-            <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
-                    class="fa-brands fa-github"></i></div>
-        </a>
-    </div>
-    <div
-        class="relative mt-3 py-2 backdrop-blur-lg bg-white/5 shadow-lg md:w-1/2 md:absolute md:bottom-30 md:left-1/2 md:transform md:-translate-x-1/2">
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 border-t-2 border-green-400 w-1/4 rounded-lg">
+    <div class="">
+        <div
+            class="flex justify-center items-center mt-16 mb-6 gap-2 text-[18px] text-slate-300 md:absolute md:bottom-60 md:left-1/2 md:transform md:-translate-x-1/2">
+            <a href="https://x.com/m_amarudinn2">
+                <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
+                        class="fa-brands fa-x-twitter"></i></div>
+            </a>
+            <a href="https://t.me/AirdropIntelligent">
+                <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
+                        class="fa-brands fa-telegram"></i></div>
+            </a>
+            <a href="#">
+                <div class="bg-white/5 shadow-lg w-8 h-8 flex justify-center items-center rounded-full"><i
+                        class="fa-brands fa-github"></i></div>
+            </a>
         </div>
-        <h3 class="text-slate-300 text-2xl mb-3 flex justify-center items-center">Tea Assam</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 md:my-5 md:rounded-md place-items-center">
-            <a href="https://tea.xyz/"
-                class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">About Tea</a>
-            <a href="https://docs.tea.xyz/tea-white-paper"
-                class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Documentation</a>
-            <a href="https://faucet-assam.tea.xyz/"
-                class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Faucet</a>
-            <a href="https://assam.tea.xyz/"
-                class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Explorer</a>
+        <div
+            class="relative mt-3 py-2 backdrop-blur-lg bg-white/5 shadow-lg md:w-1/2 md:absolute md:bottom-30 md:left-1/2 md:transform md:-translate-x-1/2">
+            <div
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 border-t-2 border-green-400 w-1/4 rounded-lg">
+            </div>
+            <h3 class="text-slate-300 text-2xl mb-3 flex justify-center items-center">Tea Assam</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 md:my-5 md:rounded-md place-items-center">
+                <a href="https://tea.xyz/"
+                    class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">About Tea</a>
+                <a href="https://docs.tea.xyz/tea-white-paper"
+                    class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Documentation</a>
+                <a href="https://faucet-assam.tea.xyz/"
+                    class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Faucet</a>
+                <a href="https://assam.tea.xyz/"
+                    class="text-[16px] text-slate-300 hover:text-slate-300/70 py-0.5 px-1.5 rounded-md">Explorer</a>
+            </div>
         </div>
     </div>
 
